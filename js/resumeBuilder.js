@@ -88,8 +88,7 @@ education.display = function(){
     
     for(var i = 0; i < education.schools.length; i++){
         $('#education').append(HTMLschoolName.replace('%data%', education.schools[i].name)
-        .replace('#', education.schools[i].url)
-        + HTMLschoolDegree.replace('%data%', education.schools[i].degree));
+        .replace('#', education.schools[i].url) + HTMLschoolDegree.replace('%data%', education.schools[i].degree));
         $('#education').append(HTMLschoolDates.replace('%data%', education.schools[i].dates));
         
         for(var x = 0; x < education.schools[i].majors.length; x++){
@@ -101,8 +100,7 @@ education.display = function(){
     
     for(var j = 0; j < education.onlineCourses.length; j++){
         $('#education').append(HTMLonlineTitle.replace('%data%', education.onlineCourses[j].title)
-        .replace('#', education.onlineCourses[j].url)
-        + HTMLonlineSchool.replace('%data%', education.onlineCourses[j].school));
+        .replace('#', education.onlineCourses[j].url) + HTMLonlineSchool.replace('%data%', education.onlineCourses[j].school));
         $('#education').append(HTMLonlineDates.replace('%data%', education.onlineCourses[j].dates));
         $('#education').append(HTMLonlineURL.replace('%data%', education.onlineCourses[j].url)
         .replace('#', education.onlineCourses[j].url));
@@ -115,8 +113,7 @@ work.display = function(){
     
     for(var i = 0; i < work.jobs.length; i++){
         $('#workExperience').append(HTMLworkEmployer.replace('%data%', work.jobs[i].employer)
-        .replace('#', work.jobs[i].url)
-        + HTMLworkTitle.replace('%data%', work.jobs[i].title));
+        .replace('#', work.jobs[i].url) + HTMLworkTitle.replace('%data%', work.jobs[i].title));
         $('#workExperience').append(HTMLworkDates.replace('%data%', work.jobs[i].dates));
         $('#workExperience').append(HTMLworkLocation.replace('%data%', work.jobs[i].location));
         $('#workExperience').append(HTMLworkDescription.replace('%data%', work.jobs[i].description));
